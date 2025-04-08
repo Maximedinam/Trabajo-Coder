@@ -7,38 +7,128 @@
     <!--Link de mi css-->
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
+<!-- Bootstrap-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
 </head>
-<body>
+<body class="body">>
     <header>
         <!-- Logo del local-->
             <a href="../index.html"><img src="../imagenes/logobunker.png" alt=""></a>
     
-                </div>
-                <nav > 
-                    <ul >
-                        <li> <a href="/pages/cervezas.html">Cervezas</a></li>
-                        <li> <a href="/pages/vinos.html">Vinos</a></li>
-                        <li> <a href="/pages/gin.html">Gin</a></li>
-                        <li> <a href="/pages/contacto.html">Contacto</a></li>
+            <section >
+                <nav> 
+                    <ul class="row fs-1" style="height: 80px; padding: 50px;" >
+                        <li class="col bg-black"> <a href="/pages/cervezas.html">Cervezas</a></li>
+                        <li class="col bg-black"> <a href="/pages/vinos.html">Vinos</a></li>
+                        <li class="col bg-black"> <a href="/pages/gin.html">Gin</a></li>
+                        <li class="col bg-black"> <a href="/pages/contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
-                </div>
+
+            </section>
             
     </header>
     <main>
-        <!-- Formulario de contacto-->
-        <form action="">
-            <div class="contacto">
-                <h2>Contactame</h2>
-                <input type="text" placeholder="Nombre:">
-                <input type="email" placeholder="Email:">
-                <textarea placeholder="Escrbibenos tu consulta"></textarea>
+    
+<section class="mb-4">
 
-                <input type="submit" value="Enviar">
+    
+    <h2 class="h1-responsive font-weight-bold text-center my-4 text-light" >Contactanos</h2>
+    
+    
+
+    <div class="row">
+
+        <!--Columna grid-->
+        <div class="col-md-9 mb-md-0 mb-5 text-light">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row ">
+
+                    <!--Columna grid-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Nombre</label>
+                        </div>
+                    </div>
+                    
+
+                    <!--Columna grid-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Titulo</label>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Colmuna grid-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a data-mdb-ripple-init class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
             </div>
-        </form>
+            <div class="status"></div>
+        </div>
+        
+
+        <!--Columna Grid-->
+        <div class="col-md-3 text-center ">
+            <ul class="list-unstyled mb-0 ">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Buenos aires 581, Cordoba Capital</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p> +5493513145671</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>bunkerbebidasok@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+    <section class="containter"> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.662679654877!2d-64.18812552350924!3d-31.423418596592974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a38cd6862205%3A0xba95990f5908222e!2sBunker%20Bebidas!5e0!3m2!1ses!2sar!4v1744135814327!5m2!1ses!2sar" width="800" height="500" ></iframe>
+    </section>   
+    </div>
+
+</section>
     </main>
-       <!-- Creamos el footer-->
+    <!-- Creamos el footer-->
     <footer>
         
         <div> <a href="https://www.instagram.com/bunkerbebidasok/"> Instagram </a></div>
