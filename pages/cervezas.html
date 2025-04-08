@@ -7,35 +7,79 @@
     <!--Link de mi css-->
     <link rel="stylesheet" href="/css/style.css">
     <title>Bunker bebidas</title>
-</head>
-<body>
-    <header>
-        <!-- Logo del local-->
-            <a href="../index.html"><img src="../imagenes/logobunker.png" alt=""></a>
+    <!-- Bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     
-                </div>
-                <nav > 
-                    <ul >
-                        <li> <a href="/pages/cervezas.html">Cervezas</a></li>
-                        <li> <a href="/pages/vinos.html">Vinos</a></li>
-                        <li> <a href="/pages/gin.html">Gin</a></li>
-                        <li> <a href="/pages/contacto.html">Contacto</a></li>
+</head>
+<body class="body">
+    <header class="containter-fluid">
+        <!-- Logo del local-->
+            <a  href="../index.html"><img src="../imagenes/logobunker.png" alt=""></a>
+    
+            <section>
+                <nav> 
+                    <ul class="row" >
+                        <li class="col bg-black"> <a href="/pages/cervezas.html">Cervezas</a></li>
+                        <li class="col bg-black"> <a href="/pages/vinos.html">Vinos</a></li>
+                        <li class="col bg-black"> <a href="/pages/gin.html">Gin</a></li>
+                        <li class="col bg-black"> <a href="/pages/contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
-                </div>
+
+            </section>
+            
             
     </header>
     <main>
         <!-- Catalogo de cervezas-->
         <h1>Nuestras cervezas</h1>
-        <p>Michelob Ultra 473ml</p>
-        <img src="../imagenes/michelob.png" alt="">
-        <p>Amstel 473ml</p>
-        <img src="../imagenes/amstel.png" alt="">
-        <p>Antares ipa 473ml</p>
-        <img src="../imagenes/antares.png" alt="">
 
-    
+        <div class="container col-12">
+            <div class="row">
+                <div class="col-sm-4"
+                <div class="card">
+                    <h5 class="card-title text-center"><img id="img_obs" src="../imagenes/michelob.png" alt=""></h5>
+                    <p class="card text"> <label id="cerveza">Michelob Ultra 473ml </label> <br> Cerveza 100% malta </br></p>
+                    <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+                
+            </div>
+                <div class="col-sm-4">
+                <div class="card">
+                    <h5 class="card-title text-center"><img id="img_obs" src="../imagenes/amstel.png" alt=""></h5>
+                    <p class="card text"> <label id="cerveza">Amstel 473ml </label> <br> Cerveza 100% malta </br></p>
+                    <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+                </div>
+                <div class="col-sm-4">
+                <div class="card">
+                        <h5 class="card-title text-center"><img id="img_obs" src="../imagenes/antares.png" alt=""></h5>
+                        <p class="card text"> <label id="cerveza">Antares Ipa 473ml </label> <br> Cerveza 100% malta </br></p>
+                        <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                </a>
+                </li>
+            </ul>
+        </nav>
+        
 
     </main>
     <!-- Creamos el footer-->
@@ -46,5 +90,6 @@
         <div> <a href="https://api.whatsapp.com/send/?phone=5493513145671&text&type=phone_number&app_absent=0"> Whatsapp </a></div>
     
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>

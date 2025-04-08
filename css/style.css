@@ -1,10 +1,8 @@
 
-body{
-    background-color: black;
+.body{
+    background-color: rgb(0, 4, 36);
 }
-body header img{
-    align: center;
-}
+
 header nav ul {
     list-style: none;
     text-align: center;
@@ -20,14 +18,14 @@ main h1 {
     text-transform: uppercase;
 }
 main p {
-    color: rgb(37, 37, 129);
+    color: #b3adad;
     line-height: 50px;
 }
 
-main img{
-    height: 400px;
-    width: 400px;
+#img_obs{
+	height: 300px;
 }
+
 
 
 footer div a {
