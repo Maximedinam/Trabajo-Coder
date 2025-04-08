@@ -1,0 +1,42 @@
+
+body{
+    background-color: black;
+}
+body header img{
+    align: center;
+}
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+main h1 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+main p {
+    color: rgb(37, 37, 129);
+    line-height: 50px;
+}
+
+main img{
+    height: 400px;
+    width: 400px;
+}
+
+
+footer div a {
+    text-decoration: none;
+    color: white
+
+}
+.contacto{
+    color: white;
+    text-align: center;
+    
+}   
