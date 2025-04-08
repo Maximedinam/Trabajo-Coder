@@ -7,43 +7,88 @@
     <!--Link de mi css-->
     <link rel="stylesheet" href="/css/style.css">
     <title>Bunker bebidas</title>
-</head>
-<body>
-    <header>
-        <!-- Logo del local-->
-            <a href="../index.html"><img src="../imagenes/logobunker.png" alt=""></a>
-    
-                </div>
-                <nav > 
-                    <ul >
-                        <li> <a href="/pages/cervezas.html">Cervezas</a></li>
-                        <li> <a href="/pages/vinos.html">Vinos</a></li>
-                        <li> <a href="/pages/gin.html">Gin</a></li>
-                        <li> <a href="/pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-                </div>
-            
-    </header>
-    <main>
-        <!-- Catalogo de vino-->
-        <h1>Nuestros vinos</h1>
-        <p>Dv Catena Malbec-Malbec</p>
-        <img src="../imagenes/dvcatena.png" alt="">
-        <p>Mi vicotria by Leandro Paredes</p>
-        <img src="../imagenes/mivictoria.png" alt="">
-        <p>Rutini Malbec</p>
-        <img src="../imagenes/rutinimalbec.png" alt="">
+<!-- Bootstrap-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
-    
-    </main>
-       <!-- Creamos el footer-->
-    <footer>
+</head>
+<body class="body">
+<header>
+    <!-- Logo del local-->
+        <a href="../index.html"><img src="../imagenes/logobunker.png" alt=""></a>
+
+            </div>
+            <nav > 
+                <ul >
+                    <li> <a href="/pages/cervezas.html">Cervezas</a></li>
+                    <li> <a href="/pages/vinos.html">Vinos</a></li>
+                    <li> <a href="/pages/gin.html">Gin</a></li>
+                    <li> <a href="/pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            </div>
         
-        <div> <a href="https://www.instagram.com/bunkerbebidasok/"> Instagram </a></div>
-        <div> <a href="https://www.tiktok.com/@bunkerbebidasok?lang=es"> Tiktok </a></div>
-        <div> <a href="https://api.whatsapp.com/send/?phone=5493513145671&text&type=phone_number&app_absent=0"> Whatsapp </a></div>
+</header>
+<main>
+    <!-- Catalogo de cervezas con bootstrap-->
+    <h1>Nuestras cervezas</h1>
+
+    <div class="container col-12">
+        <div class="row">
+            <div class="col-sm-4">
+            <div class="card">
+                <h5 class="card-title text-center"><img id="img_obs" src="../imagenes/mivictoria.png" alt=""></h5>
+                <p class="card text"> <label id="cerveza">Mi Victoria</label> <br>Malbec  </br></p>
+                <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
+            </div>
+            
+        </div>
+            <div class="col-sm-4">
+            <div class="card">
+                <h5 class="card-title text-center"><img id="img_obs" src="../imagenes/rutinimalbec.png" alt=""></h5>
+                <p class="card text"> <label id="cerveza">Rutini</label> <br>Malbec</br></p>
+                <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
+            </div>
+            </div>
+            <div class="col-sm-4">
+            <div class="card">
+                    <h5 class="card-title text-center"><img id="img_obs" src="../imagenes/dvcatena.png" alt=""></h5>
+                    <p class="card text"> <label id="cerveza">D.v. Catena</label> <br>Malbec-Malbec </br></p>
+                    <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            </a>
+            </li>
+        </ul>
+    </nav>
     
-    </footer>
+
+</main>
+<!-- Creamos el footer-->
+<footer>
+    
+    <div> <a href="https://www.instagram.com/bunkerbebidasok/"> Instagram </a></div>
+    <div> <a href="https://www.tiktok.com/@bunkerbebidasok?lang=es"> Tiktok </a></div>
+    <div> <a href="https://api.whatsapp.com/send/?phone=5493513145671&text&type=phone_number&app_absent=0"> Whatsapp </a></div>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
 </body>
 </html>
